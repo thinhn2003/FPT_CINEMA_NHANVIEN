@@ -12,6 +12,8 @@ import Ticketssucess from '../Tickets/Ticketssucess';
 import Listmovie from '../Movie/Listmovie';
 import Movie from '../Movie/Movie';
 import HelloScreen from '../Helloscreen/Helloscreen';
+import Login from '../Loginregister/Login';
+import Register from '../Loginregister/Register';
 
 const Auth = createNativeStackNavigator();
 const AuthNavigation = () => {
@@ -89,9 +91,25 @@ const AuthNavigation = () => {
         }
 
       /> */}
-       <Auth.Screen
+       {/* <Auth.Screen
         name='Helloscreen'
         component={HelloScreen}
+        options={
+          { headerShown: false }
+        }
+
+      /> */}
+      {/* <Auth.Screen
+        name='Login'
+        component={Login}
+        options={
+          { headerShown: false }
+        }
+
+      /> */}
+      <Auth.Screen
+        name='Register'
+        component={Register}
         options={
           { headerShown: false }
         }
